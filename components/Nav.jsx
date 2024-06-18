@@ -19,7 +19,7 @@ function Nav() {
 
     return (
         <>
-            <nav className="bg-White md:px-14 p-4 max-w-screen-xl mx-auto">
+            <nav className="bg-White md:px-14 p-4 max-w-screen-xl mx-auto fixed top-0 left-0 right-0 ">
                 <div className="flex items-center justify-between text-sm">
                     <div className="flex items-center justify-between space-x-6">
                         <Link href={"/"} className="flex space-x-2 items-center">
@@ -56,7 +56,7 @@ function Nav() {
                     </div>
                 </div>
             </nav>
-            <div className={`space-y-4 pt-20 px-4 pb-5 bg-bgColor text-xl ${ismenuopen ? " block fixed top-0 right-0 left-0" : " hidden"}`}>
+            <div className={`space-y-2 pt-20 px-4 pb-5 bg-bgColor text-xl ${ismenuopen ? " block fixed top-0 right-0 left-0" : " hidden"}`}>
                 {Items.map((item, index) => (
                     <Link key={index} href={`/${item.path}`} className="block hover:text-green-600 font-roboto" >
                         {item.link}
