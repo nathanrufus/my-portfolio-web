@@ -1,7 +1,10 @@
-import Nav from "@/components/Nav";
+import HomePage from "@/components/Home"
+import React from "react"
 
-export default function page (){
-  return (
-    <Nav/>
-  )
+function page() {
+	return (
+  <HomePage/>
+    )
 }
+
+export default page

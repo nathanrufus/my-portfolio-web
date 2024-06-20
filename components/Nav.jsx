@@ -19,7 +19,7 @@ function Nav() {
 
     return (
         <>
-            <nav className="bg-White md:px-14 p-4 max-w-screen-xl mx-auto fixed top-0 left-0 right-0 ">
+            <nav className="bg-White md:px-14 p-4 max-w-screen-xl mx-auto">
                 <div className="flex items-center justify-between text-sm">
                     <div className="flex items-center justify-between space-x-6">
                         <Link href={"/"} className="flex space-x-2 items-center">

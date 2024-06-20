@@ -2,17 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  background: transparent;
-}
-body{
-  overflow: hidden;
-  overflow-y: scroll;
-}
 nav{
   z-index: 10001 !important;
+}
+.gradientBg{
+  background: linear-gradient(99deg,rgb(159, 230, 159) 0%,white 100%);
 }
