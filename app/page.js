@@ -1,5 +1,6 @@
 import HomePage from "@/components/Home"
 import AboutMe from "@/components/Majors"
+import Projects from "@/components/Projects"
 import React from "react"
 
 function page() {
@@ -7,6 +8,7 @@ function page() {
     <>
     <HomePage/>
     <AboutMe/>
+    <Projects/>
     </>
 
     )
