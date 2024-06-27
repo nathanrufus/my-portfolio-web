@@ -4,8 +4,8 @@ import image from "/images/sm1.jpg"
 
 function HomePage() {
   return (
-    <section className="gradientBg h-screen ">
-      <div className=" p-4 md:px-14 max-w-screen-xl mx-auto">
+    <section className="gradientBg">
+      <div className=" p-4 md:px-14 max-w-screen-xl mx-auto pt-10">
         <div className=" md:flex items-center justify-between">
           <div className=" md:w-1/2">
             <button className=" text-white text-sm bg-green-600 rounded px-2 py-2 mb-2">Proficient Software Developer</button>
@@ -17,8 +17,8 @@ function HomePage() {
             </div>
           </div>
           <div>
-            <Image src={image} height={400} width={400}  className=" rounded-3xl mt-5"/>
-            <div className=" bg-green-600 rounded mt-3 px-4 py-2 flex items-center justify-between">
+            <Image src={image} height={600} width={600}  className=" rounded-3xl mt-5"/>
+            <div className=" bg-green-600 rounded mt-3 px-4 py-2 flex items-center justify-between mb-10">
               <div className=" flex flex-col space-y-1 items-center">
                 <span className=" text-white text-xl font-bold">OK+</span>
                 <h2 className=" text-white text-sm">Completed projects</h2>

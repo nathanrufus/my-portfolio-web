@@ -8,7 +8,7 @@ import { useState } from "react";
 function Nav() {
     const Items = [
         { link: "Home", path: "home" },
-        { link: "My Majors", path: "majors" },
+        { link: "About", path: "majors" },
         { link: "Projects", path: "projects" },
         { link: "Services", path: "services" }
     ];
