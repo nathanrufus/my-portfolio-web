@@ -1,3 +1,4 @@
+import Faq from "@/components/Faq"
 import HomePage from "@/components/Home"
 import AboutMe from "@/components/Majors"
 import Projects from "@/components/Projects"
@@ -9,6 +10,7 @@ function page() {
     <HomePage/>
     <AboutMe/>
     <Projects/>
+    <Faq/>
     </>
 
     )
