@@ -12,7 +12,7 @@ function Faq() {
     },
     {
       question: "Which programming languages do you specialize in?",
-      answer: "I specialize in Python,  and JavaScript. Python is my go-to language for its versatility and ease of use, allowing me to quickly prototype and develop applications.JavaScript, along with its libraries and frameworks such as React, is crucial for creating dynamic and interactive web applications. My proficiency in these languages enables me to tackle a wide range of software development tasks."
+      answer: "I specialize in Python and JavaScript. Python is my go-to language for its versatility and ease of use, allowing me to quickly prototype and develop applications. JavaScript, along with its libraries and frameworks such as React, is crucial for creating dynamic and interactive web applications. My proficiency in these languages enables me to tackle a wide range of software development tasks."
     },
     {
       question: "What development methodologies do you use?",
@@ -31,23 +31,24 @@ function Faq() {
 
   return (
     <div className="p-4 md:px-14 max-w-screen-xl mx-auto bg-slate-100">
-      <h1 className=" text-center text-sm mb-2 text-green-700">FAQS</h1>
+      <h1 className="text-center text-sm mb-2 text-green-700">FAQS</h1>
       <h2 className="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
       <div className="space-y-2">
         {faqs.map((faq, index) => (
-          <div key={index} className=" p-4 rounded-sm ">
+          <div key={index} className="rounded-sm">
             <div
               className="flex justify-between items-center cursor-pointer hover:bg-green-500 p-3 rounded bg-white"
               onClick={() => toggleAnswer(index)}
-              onMouseEnter={() => setOpenIndex(index)}
-              onMouseLeave={() => setOpenIndex(null)}
+              style={{ minHeight: '3rem' }}
             >
               <h2 className="text-xl">{faq.question}</h2>
               <BsPlus className={`text-green-700 w-6 h-6 transform transition-transform ${openIndex === index ? 'rotate-45' : ''}`} />
             </div>
-            {openIndex === index && (
+            <div
+              className={`transition-all duration-300 ease-in-out overflow-hidden ${openIndex === index ? 'max-h-screen' : 'max-h-0'}`}
+            >
               <p className="text-sm mt-2">{faq.answer}</p>
-            )}
+            </div>
           </div>
         ))}
       </div>
