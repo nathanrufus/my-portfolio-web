@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact"
 import Faq from "@/components/Faq"
 import HomePage from "@/components/Home"
 import AboutMe from "@/components/Majors"
@@ -15,6 +16,7 @@ function page() {
     <Faq/>
     <Services/>
     <Order/>
+    <Contact/>
     </>
 
     )
