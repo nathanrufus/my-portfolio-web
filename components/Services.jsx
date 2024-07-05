@@ -21,24 +21,24 @@ function Services() {
             </div>
             <div className=" flex flex-col space-y-2">
                 <div className=" flex space-x-2">
-                    <div className=" bg-green-700 p-2">
+                    <div className=" bg-green-600 p-2 rounded">
                         <FaScrewdriverWrench className=" text-xl text-gray-400 h-8 w-8" />
                         <h1 className=" font-bold">Software Maintenance and Support</h1>
                         <p className=" text-sm">I provide ongoing support and updates for your existing software. This involves fixing bugs, updating software to improve performance or add new features, and ensuring compatibility with new hardware and software environments.</p>
                     </div>
-                    <div className="p-2">
+                    <div className="p-2 hover:bg-green-600 rounded transition-all duration-300">
                         <FaDatabase className=" text-xl text-gray-400 h-8 w-8" />
                         <h1 className=" font-bold">Database Design and Management</h1>
                         <p className=" text-sm">I develop and integrate APIs to enable different software systems to communicate. This ensures that your software applications can work together seamlessly, enhancing functionality and interoperability.</p>
                     </div>
                 </div>
                 <div className=" flex space-x-2">
-                    <div className="p-2">
+                    <div className="p-2 hover:bg-green-600 rounded transition-all duration-300">
                         <FaCloudDownloadAlt className=" text-xl text-gray-400 h-8 w-8" />
                         <h1 className=" font-bold">Cloud Services</h1>
                         <p className="text-sm">I develop and manage cloud-based applications and services. This includes deploying applications to cloud platforms (such as AWS, Azure, Google Cloud), managing cloud resources, and ensuring scalability and reliability.</p>
                     </div>
-                    <div className="p-2">
+                    <div className="p-2 hover:bg-green-600 rounded transition-all duration-300">
                         <FaChalkboardTeacher className=" text-xl text-green-700 h-8 w-8" />
                         <h1 className=" font-bold">Software Consulting</h1>
                         <p className=" text-sm">I will provide expert advice on software development and technology solutions. This involves analyzing your current systems and processes, recommending improvements, and advising on the best technologies and practices to achieve your business goals.</p>
