@@ -1,5 +1,6 @@
 import Contact from "@/components/Contact"
 import Faq from "@/components/Faq"
+import Footer from "@/components/Footer"
 import HomePage from "@/components/Home"
 import AboutMe from "@/components/Majors"
 import Order from "@/components/Order"
@@ -17,6 +18,7 @@ function page() {
     <Services/>
     <Order/>
     <Contact/>
+    <Footer/>
     </>
 
     )

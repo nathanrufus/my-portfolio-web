@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-nav{
+/* nav{
   z-index: 10001 !important;
-}
+} */
 .gradientBg{
   background: linear-gradient(99deg,rgb(159, 230, 159) 0%,white 100%);
+}
+html {
+  scroll-behavior: smooth;
 }

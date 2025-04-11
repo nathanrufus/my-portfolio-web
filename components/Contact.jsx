@@ -1,8 +1,4 @@
 import React from "react"
-import facebook from "./assets/facebook.png"
-import instagram from "./assets/instagram.png"
-import dribble from "./assets/dribbble.png"
-import email from "./assets/sms.png"
 
 function Contact() {
   return (

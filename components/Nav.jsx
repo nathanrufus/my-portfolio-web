@@ -7,10 +7,10 @@ import { useState } from "react";
 
 function Nav() {
     const Items = [
-        { link: "Home", path: "home" },
-        { link: "About", path: "majors" },
-        { link: "Projects", path: "projects" },
-        { link: "Services", path: "services" }
+        { link: "Home", path: "#home" },
+        { link: "About", path: "#majors" },
+        { link: "Projects", path: "#projects" },
+        { link: "Services", path: "#services" }
     ];
     const [ismenuopen, setismenuopen] = useState(false)
     const togglemenu = () => {
@@ -19,14 +19,14 @@ function Nav() {
 
     return (
         <>
-            <nav className="bg-White md:px-14 p-4 max-w-screen-xl mx-auto">
+            <nav className="bg-White md:px-14 p-4 mx-auto fixed top-0 left-0 w-full z-50">
                 <div className="flex items-center justify-between text-sm">
                     <div className="flex items-center justify-between space-x-6">
                         <Link href={"/"} className="flex space-x-2 items-center">
                             <BsBackpack2 className="text-2xl text-green-600" />
                             <span className="text-xl text-green-600 font-roboto">Kibet Nathan</span>
                         </Link>
-                        <ul className="md:flex space-x-3 hidden">
+                        <ul className="md:flex space-x-3 hidden absolute sm:static md:z-auto left-0">
                             {Items.map((item, index) => (
                                 <li key={index}>
                                     <Link href={`/${item.path}`} className="block hover:text-green-600 hover:underline underline-offset-4 text-xl font-roboto" >
@@ -38,8 +38,9 @@ function Nav() {
                     </div>
                     <div className="md:flex space-x-5 hidden items-center">
                         {/* Additional items can go here */}
-                        <Link href={"/contact"}> <MdOutlineContactSupport className="text-2xl text-green-600" /></Link>
-                        <button className=" py-2 px-4 transition-all duration-500 rounded bg-green-600 text-White hover:bg-bgColor hover:text-green-600 hover:border-green-600">Write a Review</button>
+                        <Link href="#contact"> <MdOutlineContactSupport className="text-2xl text-green-600" /></Link>
+                        <Link href="#contact"><button className=" py-2 px-4 transition-all duration-500 rounded bg-green-600 text-White hover:bg-bgColor hover:text-green-600 hover:border-green-600">Write a Review</button></Link>
+                        
                     </div>
                     {/* menu btn only on mobile */}
                     <div className=" md:hidden">
@@ -56,7 +57,7 @@ function Nav() {
                     </div>
                 </div>
             </nav>
-            <div className={`space-y-2 pt-20 px-4 pb-5 bg-bgColor text-xl ${ismenuopen ? " block fixed top-0 right-0 left-0" : " hidden"}`}>
+            <div className={`space-y-2 pt-2 px-4 pb-5 bg-bgColor text-xl ${ismenuopen ? " block fixed right-0 left-0 top-12" : " hidden"}`}>
                 {Items.map((item, index) => (
                     <Link key={index} href={`/${item.path}`} className="block hover:text-green-600 font-roboto" >
                         {item.link}

@@ -3,8 +3,8 @@ import { BsBackpack2 } from "react-icons/bs";
 
 
 function AboutMe() {
-  return <div className=" p-4 md:px-14 max max-w-screen-xl mx-auto">
-    <div className=" md:flex items-center justify-between space-x-10">
+  return <div className=" p-4 md:px-14 max max-w-screen-xl mx-auto" id="majors">
+    <div className=" md:flex items-center justify-center md:space-x-40">
       <BsBackpack2 className="text-sm text-green-600 w-80 h-80 m-4" />
       <div className=" md:w-1/2 rounded-sm bg-slate-100 p-2 mb-4 ">
         <h1 className=" text-green-700 text-left text-sm font-semibold mb-1">About Me</h1>

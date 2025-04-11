@@ -6,7 +6,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import { FaChalkboardTeacher } from "react-icons/fa";
 
 function Services() {
-    return <section className=" p-4 max-w-screen-xl md:px-14 mx-auto">
+    return <section className=" p-4 max-w-screen-xl md:px-14 mx-auto" id="services">
         <h1 className=" text-sm text-green-700 mb-1 text-center font-semibold">My services</h1>
         <h2 className=" font-bold text-center mb-2 text-xl">How I Can Prove My Academic Excellence</h2>
         <div className=" md:flex md:space-x-2">
